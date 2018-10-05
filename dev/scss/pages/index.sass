@@ -1,5 +1,6 @@
 .main-slider
     padding-top: 45px
+    padding-bottom: 65px
     &__content
         h2
             font-size: 36px
@@ -11,8 +12,24 @@
         font-size: 18px
         padding-bottom: 32px
     &__inner
+        position: relative
+        padding-bottom: 82px
+        .slick-arrow
+            position: absolute
+            bottom: 0
+            height: 60px
+            width: calc(50% - 15px)
+            background: #e6e7e9
+            display: block
+            font-size: 18px
+            color: #394252
+            border: none
+            &.slick-prev
+                left: 0
+            &.slick-next
+                right: 0
     &__item
-        max-width: 270px
+        padding: 0 15px
         .pic
             text-align: center
             height: 360px
@@ -29,6 +46,7 @@
             font-size: 16px
             +FFRR
             padding: 0 14px
+            margin: 0
         &:hover
             .pic
                 border-color: #ffb400

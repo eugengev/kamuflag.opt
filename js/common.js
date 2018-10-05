@@ -50,9 +50,9 @@ $(function() {
       $('.js-main-slider').slick({
         dots: false,
         infinite: false,
+        slickNext: 'ddd',
         speed: 300,
-        centerPadding: '20px',
-        slidesToShow: 3,
+        slidesToShow: 4,
         responsive: [
           {
             breakpoint: 1024,
