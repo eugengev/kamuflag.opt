@@ -1,5 +1,5 @@
 .main-slider
-    padding-top: 45px
+    padding-top: 37px
     padding-bottom: 65px
     &__content
         h2
@@ -15,19 +15,48 @@
         position: relative
         padding-bottom: 82px
         .slick-arrow
-            position: absolute
-            bottom: 0
-            height: 60px
-            width: calc(50% - 15px)
-            background: #e6e7e9
-            display: block
-            font-size: 18px
-            color: #394252
-            border: none
-            &.slick-prev
-                left: 0
-            &.slick-next
-                right: 0
+          outline: none
+          position: absolute
+          bottom: 0
+          height: 60px
+          width: calc(50% - 35px)
+          background: #e6e7e9
+          display: block
+          font-size: 18px
+          color: #394252
+          border: none
+          &.slick-prev
+            left: 20px
+            &:before
+              content: ''
+              display: inline-block
+              position: absolute
+              top: 0
+              left: -20px
+              width: 0
+              height: 0
+              border-top: 30px solid transparent
+              border-right: 20px solid #e6e7e9
+              border-bottom: 30px solid transparent
+            &:hover:before
+              border-right-color: #ffb400
+          &.slick-next
+            right: 20px
+            &:before
+              content: ''
+              display: inline-block
+              position: absolute
+              top: 0
+              right: -20px
+              width: 0
+              height: 0
+              border-top: 30px solid transparent
+              border-left: 20px solid #e6e7e9
+              border-bottom: 30px solid transparent
+            &:hover:before
+              border-left-color: #ffb400
+          &:hover
+            background: #ffb400
     &__item
         padding: 0 15px
         .pic
@@ -53,3 +82,93 @@
             .title
                 background: #ffb400
                 color: #000000
+
+.priem
+  background: url(../images/priem-bg.jpg) no-repeat center top
+  padding: 40px 0  50px
+  h2
+    +FFRR
+    color: #ffffff
+    font-size: 36px
+    margin: 0
+    padding-bottom: 30px
+  &__item
+    padding: 25px
+    min-height: 270px
+    margin-bottom: 30px
+    +FFRL
+    background-color: rgba(255, 255, 255, 0.102)
+    span
+      color: #ffde00
+    h3
+      color: #ffde00
+      font-size: 18px
+      padding-left: 50px
+      padding-bottom: 6px
+      +FFRR
+      line-height: 20px
+      position: relative
+      img
+        position: absolute
+        left: 0
+        right: 0
+      &:after
+        content: ''
+        display: table
+        clear: both
+    &-text
+      +FFRL
+      font-size: 16px
+      color: #ffffff
+      line-height: normal
+
+.contact
+  +FFRR
+  background: url(../images/fon-contact.jpg) repeat center top
+  padding-top: 54px
+  p
+    padding: 0
+    margin: 0
+  h2
+    +FFRB
+    font-size: 36px
+    line-height: 40px
+    color: #394252
+    padding-bottom: 18px
+  .text1
+    font-size: 24px
+    color: #000000
+    padding-bottom: 34px
+  .topform__submit
+    display: inline-block
+    text-decoration: none
+    font-size: 18px
+    color: #000000
+    line-height: 80px
+    background: #ffb400
+    height: 80px
+  .phone
+    padding-top: 40px
+    a
+      text-decoration: none
+      font-size: 36px
+      color: #394252
+      +FFRR
+      strong
+        +FFRB
+  .email
+    padding-top: 20px
+    +FFRL
+    a
+      +FFRL
+      font-size: 24px
+      color: #000000
+      text-decoration: none
+  .adress
+    padding-top: 20px
+    +FFRL
+    font-size: 24px
+    color: #000000
+
+.text-center
+  text-align: center

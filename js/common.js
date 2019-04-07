@@ -50,7 +50,9 @@ $(function() {
       $('.js-main-slider').slick({
         dots: false,
         infinite: false,
-        slickNext: 'ddd',
+          swipeToSlide: true,
+          prevArrow: '<button type="button" class="slick-prev">НАЗАД</button>',
+          nextArrow: '<button type="button" class="slick-next">ДАЛЕЕ</button>',
         speed: 300,
         slidesToShow: 4,
         responsive: [

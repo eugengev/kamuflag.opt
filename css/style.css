@@ -30,7 +30,7 @@
 
 .footer { background: #394252; font-family: 'Roboto'; font-weight: 300; font-style: normal; font-size: 14px; line-height: 60px; color: #ffffff; }
 
-.main-slider { padding-top: 45px; padding-bottom: 65px; }
+.main-slider { padding-top: 37px; padding-bottom: 65px; }
 
 .main-slider__content h2 { font-size: 36px; font-weight: normal; color: #394252; font-family: 'Roboto'; font-weight: normal; font-style: normal; }
 
@@ -38,11 +38,21 @@
 
 .main-slider__inner { position: relative; padding-bottom: 82px; }
 
-.main-slider__inner .slick-arrow { position: absolute; bottom: 0; height: 60px; width: calc(50% - 15px); background: #e6e7e9; display: block; font-size: 18px; color: #394252; border: none; }
+.main-slider__inner .slick-arrow { outline: none; position: absolute; bottom: 0; height: 60px; width: calc(50% - 35px); background: #e6e7e9; display: block; font-size: 18px; color: #394252; border: none; }
 
-.main-slider__inner .slick-arrow.slick-prev { left: 0; }
+.main-slider__inner .slick-arrow.slick-prev { left: 20px; }
 
-.main-slider__inner .slick-arrow.slick-next { right: 0; }
+.main-slider__inner .slick-arrow.slick-prev:before { content: ''; display: inline-block; position: absolute; top: 0; left: -20px; width: 0; height: 0; border-top: 30px solid transparent; border-right: 20px solid #e6e7e9; border-bottom: 30px solid transparent; }
+
+.main-slider__inner .slick-arrow.slick-prev:hover:before { border-right-color: #ffb400; }
+
+.main-slider__inner .slick-arrow.slick-next { right: 20px; }
+
+.main-slider__inner .slick-arrow.slick-next:before { content: ''; display: inline-block; position: absolute; top: 0; right: -20px; width: 0; height: 0; border-top: 30px solid transparent; border-left: 20px solid #e6e7e9; border-bottom: 30px solid transparent; }
+
+.main-slider__inner .slick-arrow.slick-next:hover:before { border-left-color: #ffb400; }
+
+.main-slider__inner .slick-arrow:hover { background: #ffb400; }
 
 .main-slider__item { padding: 0 15px; }
 
@@ -55,5 +65,45 @@
 .main-slider__item:hover .pic { border-color: #ffb400; }
 
 .main-slider__item:hover .title { background: #ffb400; color: #000000; }
+
+.priem { background: url(../images/priem-bg.jpg) no-repeat center top; padding: 40px 0  50px; }
+
+.priem h2 { font-family: 'Roboto'; font-weight: normal; font-style: normal; color: #ffffff; font-size: 36px; margin: 0; padding-bottom: 30px; }
+
+.priem__item { padding: 25px; min-height: 270px; margin-bottom: 30px; font-family: 'Roboto'; font-weight: 300; font-style: normal; background-color: rgba(255, 255, 255, 0.102); }
+
+.priem__item span { color: #ffde00; }
+
+.priem__item h3 { color: #ffde00; font-size: 18px; padding-left: 50px; padding-bottom: 6px; font-family: 'Roboto'; font-weight: normal; font-style: normal; line-height: 20px; position: relative; }
+
+.priem__item h3 img { position: absolute; left: 0; right: 0; }
+
+.priem__item h3:after { content: ''; display: table; clear: both; }
+
+.priem__item-text { font-family: 'Roboto'; font-weight: 300; font-style: normal; font-size: 16px; color: #ffffff; line-height: normal; }
+
+.contact { font-family: 'Roboto'; font-weight: normal; font-style: normal; background: url(../images/fon-contact.jpg) repeat center top; padding-top: 54px; }
+
+.contact p { padding: 0; margin: 0; }
+
+.contact h2 { font-family: 'Roboto'; font-weight: bold; font-style: normal; font-size: 36px; line-height: 40px; color: #394252; padding-bottom: 18px; }
+
+.contact .text1 { font-size: 24px; color: #000000; padding-bottom: 34px; }
+
+.contact .topform__submit { display: inline-block; text-decoration: none; font-size: 18px; color: #000000; line-height: 80px; background: #ffb400; height: 80px; }
+
+.contact .phone { padding-top: 40px; }
+
+.contact .phone a { text-decoration: none; font-size: 36px; color: #394252; font-family: 'Roboto'; font-weight: normal; font-style: normal; }
+
+.contact .phone a strong { font-family: 'Roboto'; font-weight: bold; font-style: normal; }
+
+.contact .email { padding-top: 20px; font-family: 'Roboto'; font-weight: 300; font-style: normal; }
+
+.contact .email a { font-family: 'Roboto'; font-weight: 300; font-style: normal; font-size: 24px; color: #000000; text-decoration: none; }
+
+.contact .adress { padding-top: 20px; font-family: 'Roboto'; font-weight: 300; font-style: normal; font-size: 24px; color: #000000; }
+
+.text-center { text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
